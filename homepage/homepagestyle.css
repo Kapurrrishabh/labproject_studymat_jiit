@@ -10,6 +10,8 @@ body {
   margin-right: 5px;
 }
 .intro {
+  /* background-image: url(./cllgphoto.png);
+  background-size:fit; */
   display: flex;
   height: 34vh;
   align-items: center;
@@ -218,7 +220,7 @@ h2{
    height:84vh;
    width: 94vw;
    overflow: hidden;
-   overflow-y:auto;
+   /* overflow-y:auto; */
    margin-left: 3vw;
    margin-right:2vw;
 }
@@ -228,4 +230,23 @@ footer{
    gap:5px;
    align-items: center;
    justify-content: center;
+}
+.upbtn{
+  border: none;
+  background-color:transparent
+}
+.upbtn2{
+  border: none;
+  background-color: transparent;
+  transform:rotate(180deg);
+}
+.subbtn{
+display:flex;
+justify-content: center;
+background-color: #f7f9fc;
+margin-top:1vh;
+margin-bottom: 1vh;
+margin-left: 3vw;
+margin-right: 3vw;
+
 }

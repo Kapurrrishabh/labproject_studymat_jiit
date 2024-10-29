@@ -34,12 +34,15 @@
         <div class="form">
           <input type="checkbox" id="chk" aria-hidden="true">
           <div class="signup">
-            <form>
+            <form action="signin.php" method="post">
               <label for="chk" aria-hidden="true">Sign Up</label>
-              <input type="text" class="username" placeholder="Username" id="user" required="">
-              <input type="password" class="password" placeholder="password" id="pass" required="">
-              <input type="Email" class="Email" placeholder="email" id="email" required="">
-              <input type="text" class="contact" placeholder="contact" id="contact" required="">
+              <input type="text" name="name" class="name" placeholder="Name" id="name" >
+              <input type="text" name="username" class="username" placeholder="Username" id="user">
+              <input type="password" name="password" class="password" placeholder="password" id="pass" >
+              <input type="text" name="branch" class="branch" placeholder="Branch" id="branch" >
+              <input type="text" name="sem" class="sem" placeholder="semister" id="sem" >
+              <input type="Email" name="email" class="Email" placeholder="email" id="email" >
+              <input type="text" name="contact" class="contact" placeholder="contact" id="contact" >
               <button type="submit">Sign In</button>
 
             </form>
@@ -58,3 +61,4 @@
 </body>
 
 </html>
+<!-- INSERT INTO `userlist` (`sno`, `name`, `username`, `password`, `branch`, `semester`, `email`, `contact`) VALUES ('1', 'Rishabh Kapur', 'jiit23103101', 'Rishabh', 'use', '3', 'kapur@gmail.com', '9981414600'); -->

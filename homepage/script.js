@@ -16,7 +16,6 @@ function clearHeading() {
          heading.textContent = ""; 
          typeEffect(text,0); 
           }
-// Start the typing effect
   typeEffect(text, 0);
   document.querySelectorAll('.subcontainer').forEach(container => {
     const subcontainer = container.querySelector('.subjects');
@@ -31,4 +30,24 @@ function clearHeading() {
     }
     backbtn.addEventListener('click', slideleft);
     forbtn.addEventListener('click', slideright);
+});
+document.querySelectorAll('.coursedisc').forEach(container => {
+    const subcontainer = container.querySelector('.Allsubjects');
+    const upbtn = container.querySelector('.upbtn');    // Button to scroll up
+    const downbtn = container.querySelector('.upbtn2'); // Button to scroll down
+    const scrollAmount = 250; // Amount to scroll in pixels
+
+    // Function to scroll up
+    function slideUp() {
+        subcontainer.scrollBy({ top: -scrollAmount, behavior: 'smooth' });
+    }
+
+    // Function to scroll down
+    function slideDown() {
+        subcontainer.scrollBy({ top: scrollAmount, behavior: 'smooth' });
+    }
+
+    // Add event listeners for the buttons
+    upbtn.addEventListener('click', slideUp);
+    downbtn.addEventListener('click', slideDown);
 });
